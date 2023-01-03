@@ -12,7 +12,7 @@
     - name: Ping Managed Nodes
       ping: 
 
-    - name: Store my_data value to pass to a second job
+    - name: Store my_data value to pass to job2
       set_stats:
         data:
           my_data: "{{ ansible_host }}"

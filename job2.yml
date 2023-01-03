@@ -14,4 +14,4 @@
 
     - name: Get and debug my_data value
       debug:
-        msg: "my_data: {{ my_data }}"
+        var: my_data

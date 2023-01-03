@@ -15,4 +15,5 @@
     - name: Store my_data value to pass to job2
       set_stats:
         data:
-          my_data: "{{ ansible_host }}"
+          my_data:
+            "{{ ansible_host }}": "{{ ansible_host }}"

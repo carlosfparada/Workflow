@@ -1,0 +1,17 @@
+---
+
+- name: Basic playbook for a Workflow
+  hosts: all
+  gather_facts: no
+  tasks:
+
+    - name: Debug ansible_hostname variable
+      debug:
+        msg: "Managed node: {{ ansible_host }}"
+  
+    - name: Ping Managed Nodes
+      ping: 
+
+    - name: Get and debug my_data value
+      debug:
+        msg: "my_data: {{ my_data }}"

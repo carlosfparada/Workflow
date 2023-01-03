@@ -1,5 +1,7 @@
 ---
 
+---
+
 - name: Basic playbook for a Workflow
   hosts: all
   gather_facts: no
